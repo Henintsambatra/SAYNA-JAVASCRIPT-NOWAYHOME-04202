@@ -1,83 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;800;900&display=swap');
-
 @font-face {
     font-family: 'far_from_homecomingregular';
     src: url(../police/Far-From-Homecoming-Updated.otf) format('OpenType');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Montserrat, sans-serif;
     font-weight: 200;
 }
 
-.conteneur{
+.conteneur {
     width: 80%;
     margin: 0 auto;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-:root{
+:root {
     --primary-ad-color: #f1c530;
     --black-ad-color: #000000;
     --white-ad-color: #ffffff;
 }
 
-.brand-mobile{
+.brand-mobile {
     display: none;
 }
 
+
 /* Design Navigation */
 
-#header-top nav{
+#header-top nav {
     background-color: var(--primary-ad-color);
     padding: 15px 0;
 }
 
-#header-top nav .navigbar{
+#header-top nav .navigbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#header-top nav .brand img, footer .brand img{
+#header-top nav .brand img,
+footer .brand img {
     padding-left: 20px;
 }
 
-#header-top nav .brand img:nth-child(2), footer .brand img:nth-child(2){
-    padding-bottom: 15px;
+#header-top nav .brand img:nth-child(2),
+footer .brand img:nth-child(2) {
+    padding-bottom: 2px;
 }
 
-#header-top nav .menu ul{
+#header-top nav .menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#header-top nav .menu ul li{
+#header-top nav .menu ul li {
     margin-left: 70px;
     font-size: 20px;
 }
 
-#header-top nav .menu ul li a{
+#header-top nav .menu ul li a {
     text-decoration: none;
     font-weight: 500;
     color: var(--white-ad-color);
 }
 
+
 /* La partie Hero Design */
 
-#hero{
+#hero {
     background-image: url("../img/img7.png");
     height: 550px;
     background-repeat: no-repeat;
@@ -85,40 +88,43 @@ ul{
     background-size: cover;
 }
 
-#hero div{
+#hero div {
     color: var(--white-ad-color);
 }
 
-#hero .titre{
+#hero .titre {
     font-family: 'far_from_homecomingregular';
     font-size: 5em;
     font-weight: 100;
 }
 
-#hero .description{
+#hero .description {
     font-weight: bold;
     font-size: 1.4em;
+    display: none;
 }
 
-#hero .box{
+#hero .box {
     position: relative;
+    left: -50%;
     top: 25%;
 }
 
+
 /* La section des cartes Design */
 
-#card-section{
+#card-section {
     background-color: var(--primary-ad-color);
     padding-top: 40px;
 }
 
-#card-section .card{
+#card-section .card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#card-section .card-hero{
+#card-section .card-hero {
     border: 6px solid var(--black-ad-color);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -129,7 +135,7 @@ ul{
     box-shadow: 0px 4px 6px var(--black-ad-color);
 }
 
-#card-section .card-hero .card-image{
+#card-section .card-hero .card-image {
     background-color: var(--white-ad-color);
     height: 180px;
     margin-bottom: 15px;
@@ -137,7 +143,7 @@ ul{
     background-position: center;
 }
 
-#card-section .card-hero:hover{
+#card-section .card-hero:hover {
     transform: scale(1.05);
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -145,163 +151,169 @@ ul{
     background-color: var(--black-ad-color);
 }
 
+
 /* Ajout des images par carte */
-#card-section .card-hero .card-image-1{
+
+#card-section .card-hero .card-image-1 {
     background-image: url(../img/img8.png);
 }
 
-#card-section .card-hero .card-image-2{
+#card-section .card-hero .card-image-2 {
     background-image: url(../img/img9.png);
 }
-#card-section .card-hero .card-image-3{
+
+#card-section .card-hero .card-image-3 {
     background-image: url(../img/img10.png);
 }
 
+
 /* Design carte contenu */
 
-#card-section .card-hero .card-title{
+#card-section .card-hero .card-title {
     text-align: center;
     font-weight: bold;
 }
 
-#card-section .card-hero .card-content{
+#card-section .card-hero .card-content {
     padding: 15px;
     font-size: 15px;
 }
-#card-section .card-hero .card-content p{
+
+#card-section .card-hero .card-content p {
     margin-bottom: 10px;
     padding-bottom: 5px;
 }
 
-#card-section .card-hero .card-content span{
+#card-section .card-hero .card-content span {
     font-weight: bold;
 }
 
+
 /* Design Footer  */
 
-footer{
+footer {
     background-color: var(--black-ad-color);
     padding: 20px 0;
 }
 
-.footer{
+.footer {
     color: var(--white-ad-color);
     text-align: center;
     font-size: 13px;
-
 }
 
-.navigation-footer{
+.navigation-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2em 0;
 }
 
-.navigation-footer .list1, .navigation-footer .list2{
+.navigation-footer .list1,
+.navigation-footer .list2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navigation-footer li{
+.navigation-footer li {
     padding-left: 30px;
 }
 
-.navigation-footer li a{
+.navigation-footer li a {
     color: var(--white-ad-color);
     text-decoration: none;
 }
 
-.navigation-footer .list2 .formselect{
-    background-color: var(--primary-ad-color);
-    border-radius: 50px;
-    width: 100px;
-    color: var(--white-ad-color);
-    padding: 3px 15px;
+.brand a {
+    text-decoration: none;
 }
 
-footer .media{
+.navigation-footer .list2 .formselect {
+    background-color: var(--primary-ad-color);
+    border-radius: 50px;
+    width: 140px;
+    color: var(--white-ad-color);
+    padding: 5px 10px;
+}
+
+footer .media {
     padding: 15px;
     margin-bottom: 10px;
 }
-footer .media img{
+
+footer .media .footer-icones {
     background-color: var(--primary-ad-color);
-    color: var(--white-ad-color);
-    padding: 5px;
+    color: var(--black-ad-color);
+    padding: 12px;
     border-radius: 50%;
 }
 
-footer .copyright{
+footer .copyright {
     padding: 10px;
 }
+
 
 /* Mobile */
 
 @media screen and (max-width: 768px) {
-    nav .menu{
+    nav .menu {
         display: none;
     }
-    #hero .titre{
+    #hero .titre {
         font-family: 'far_from_homecomingregular';
         font-size: 5em;
         font-weight: 100;
     }
-    
-    #hero .description{
+    #hero .description {
         font-weight: bold;
         font-size: 1em;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .conteneur{
+    .conteneur {
         width: 90%;
         margin: 0 auto;
     }
-    #header-top{
+    #header-top {
         display: none;
     }
-    .brand-mobile{
+    .brand-mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 20%;
     }
-    #hero .titre{
+    #hero .titre {
         font-family: 'far_from_homecomingregular';
         font-size: 2em;
         font-weight: 100;
     }
-    
-    #hero .description{
+    #hero .description {
         font-weight: bold;
         font-size: 0.7em;
     }
-
-/* Footer mobile*/
-
-.navigation-footer{
-    display: block;
-}
-.navigation-footer .list1, .navigation-footer .list2{
-    display: block;
-    padding-bottom: 10px;
-}
-
-.navigation-footer .list1{
-    margin-bottom: 20px;
-   
-}
-.navigation-footer .list2{
-    margin-top: 20px;
-}
-
-.navigation-footer .list1 li, .navigation-footer .list2 li{
-    padding-bottom: 10px;
-}
-
-footer .copyright{
-    font-size: 10px;
-}
+    /* Footer mobile*/
+    .navigation-footer {
+        display: block;
+    }
+    .navigation-footer .list1,
+    .navigation-footer .list2 {
+        display: block;
+        padding-bottom: 10px;
+    }
+    .navigation-footer .list1 {
+        margin-bottom: 20px;
+    }
+    .navigation-footer .list2 {
+        margin-top: 20px;
+    }
+    .navigation-footer .list1 li,
+    .navigation-footer .list2 li {
+        padding-bottom: 10px;
+    }
+    footer .copyright {
+        font-size: 10px;
+    }
 }
